@@ -7,14 +7,18 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch --env-file .env src/server.ts",
+    "prisma": "prisma studio",
+    "prisma:migrate": "prisma migrate dev"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
+    "prisma": "^6.15.0",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2"
   },
   "dependencies": {
+    "@prisma/client": "^6.15.0",
     "fastify": "^5.5.0"
   }
 }

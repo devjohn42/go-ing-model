@@ -6,3 +6,13 @@ Content-Type: application/json
   "details": "Um evento para apaixonados por desenvolvimento",
   "maximumAttendees": 100
 }
+
+###
+
+POST http://localhost:3333/event/46ca4c0b-2809-4cf6-b989-5e0dd7885d0c/attendee
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "jd@gmail.com"
+}

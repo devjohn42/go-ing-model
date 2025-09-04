@@ -13,8 +13,8 @@
 
 ### Regras de Negócio
 
-- [] O Participante só pode se inscrever em um evento uma única vez;
-- [] O Participante só pode se inscrever em eventos com vagas disponíveis;
+- [x] O Participante só pode se inscrever em um evento uma única vez;
+- [x] O Participante só pode se inscrever em eventos com vagas disponíveis;
 - [] O Participante só pode realizar check-in em um evento uma única vez;
 
 ### Requisitos não-funcionais

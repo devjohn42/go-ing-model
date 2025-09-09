@@ -28,4 +28,4 @@
 40x => Erro do cliente (Erro em alguma informação enviada por QUEM está fazendo a chamada para API)
 50x => Erro do servidor (Um erro que está acontecendo INDEPENDENTE do que está sendo enviado para o servidor)
 
-52:51
+37:37

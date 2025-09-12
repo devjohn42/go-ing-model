@@ -2,6 +2,7 @@ import { FastifyInstance } from "fastify"
 import { ZodTypeProvider } from "fastify-type-provider-zod"
 import { z } from "zod"
 import { prisma } from "../db/prisma.js"
+import { BadRequest } from "./_errors/bad-request.js"
 
 //=> Nano ID: um ID mais simples, porém personalizavel e mais fácil de memorizar
 //Id incremental para o banco de dados e o NanoId para a rota
@@ -46,7 +47,7 @@ export const getAttendeeBadge = async (app: FastifyInstance) => {
       })
 
       if (attendee === null) {
-        throw new Error('Attendee not found.')
+        throw new BadRequest('Attendee not found.')
       }
 
       const baseURL = `${request.protocol}://${request.hostname}`

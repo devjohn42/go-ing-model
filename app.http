@@ -2,7 +2,7 @@ POST http://localhost:3333/event
 Content-Type: application/json
 
 {
-  "title": 123,
+  "title": "Node Sumit",
   "details": null,
   "maximumAttendees": 2
 }

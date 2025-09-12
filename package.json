@@ -11,12 +11,15 @@
   },
   "scripts": {
     "dev": "tsx watch --env-file .env src/server.ts",
-    "prisma": "prisma studio",
+    "build":"tsup src --format esm",
+    "start": "node dist/server.js",
+    "prisma:studio": "prisma studio",
     "prisma:migrate": "prisma migrate dev"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
     "prisma": "^6.15.0",
+    "tsup": "^8.5.0",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2"
   },
